@@ -12,6 +12,8 @@ form.addEventListener ('submit',e => {
             score += 11.11;
         }
    })
+    window.scrollTo(0,0)
+    
    h2.textContent = `YOUR CHILD'S HAPPINESS SCORE IS ${score}`
     console.log(score)
 })
