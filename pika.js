@@ -13,7 +13,18 @@ form.addEventListener ('submit',e => {
         }
    })
     window.scrollTo(0,0)
+   
+   let output = 0;
     
-   h2.textContent = `YOUR CHILD'S HAPPINESS SCORE IS ${score}`
-    console.log(score)
+    const timer = setInterval(()=>{
+        h2.textContent = `YOUR CHILD'S HAPPINESS SCORE IS ${output}`
+        if (output === score){
+            clearInterval(timer)
+        }
+        else {
+            output++;
+        }
+        
+    },10)
+   
 })
