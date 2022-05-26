@@ -9,7 +9,7 @@ form.addEventListener ('submit',e => {
 
     userAns.forEach((ans,index) => {
         if (ans === correctAnwsers[index] ){
-            score += 11.11;
+            score += 11;
         }
    })
     window.scrollTo(0,0)
